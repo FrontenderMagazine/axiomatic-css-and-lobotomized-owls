@@ -298,12 +298,6 @@ prescribing the appearance of individual items, we build systems to anticipate
 them. Instead of prescribing the appearance of the interface as a whole, we let 
 the content determine it. We give control back to the people who would make it.
 
-## Also in Issue № 406
-
-## [The Specialized Web: Working with Subject-Matter Experts][17]
-
-by Amanda Costello</aside>
-
 When turning off CSS for a webpage altogether, you should notice two things.
 First, the page is unfalteringly flexible: the content fits the viewport 
 regardless of its dimensions. Second—provided you have written standard, 

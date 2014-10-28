@@ -175,6 +175,7 @@ elements, with solution (b), which uses the owl selector.
 <figure>
 
 ![Diagram showing elements with margins, with and without the owl selector.][8]
+
 Now consider how this behaves in regard to nesting. As illustrated, using the
 owl selector and just a margin-top value, no first or last element of a set will
 ever present redundant margin. Whenever you create a subset of these elements, 

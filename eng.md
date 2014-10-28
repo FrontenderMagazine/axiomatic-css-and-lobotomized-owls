@@ -107,7 +107,7 @@ in modern browsers is futile.” I’ve yet to read any compelling evidence to
 counter these findings.
 
 According to Frain, it is, instead, the quantity of CSS selectors—the bloat
-—that may cause issues; he mentions unused declarations specifically. In other 
+— that may cause issues; he mentions unused declarations specifically. In other 
 words, embracing class selectors for their “speed” is of little use when their 
 proliferation is causing the real performance issue. Well, that and the giant 
 JPEGs and un-subsetted web fonts.
@@ -146,7 +146,6 @@ owl face. The axiom is as follows: “All elements in the flow of the document
 that proceed other elements must receive a top margin of one line.
 ”  
 
-
     * + * {
     	margin-top: 1.5em;
     }
@@ -173,7 +172,9 @@ don’t generate any redundant margin (exposed glue) destined to combine with th
 padding of parent elements. Compare solution (a), which adds a top margin to all
 elements, with solution (b), which uses the owl selector.  
 
-<figure>![Diagram showing elements with margins, with and without the owl selector.][8]</figure>
+<figure>
+   ![Diagram showing elements with margins, with and without the owl selector.][8]
+</figure>
 
 Now consider how this behaves in regard to nesting. As illustrated, using the
 owl selector and just a margin-top value, no first or last element of a set will
@@ -183,8 +184,9 @@ will apply to the subset. No margin, regardless of nesting level, will ever meet
 padding. With a sort of algorithmic elegance, we protect against compound 
 whitespace throughout our interface.
 
-<figure>![Diagram showing nested elements with margins using the owl selector.][9]</
-figure>
+<figure>
+   ![Diagram showing nested elements with margins using the owl selector.][9]
+</figure>
 
 This is eminently less verbose and more robust than approaching the problem
 unaxiomatically and removing the leftover glue*after the fact*, as Chris Coyier

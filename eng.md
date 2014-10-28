@@ -180,11 +180,9 @@ ever present redundant margin. Whenever you create a subset of these elements,
 by wrapping them in a nested parent, the same rules that apply to the superset 
 will apply to the subset. No margin, regardless of nesting level, will ever meet
 padding. With a sort of algorithmic elegance, we protect against compound 
-whitespace throughout our interface.
+whitespace throughout our interface.<figure>
 
-<figure>
-   ![Diagram showing nested elements with margins using the owl selector.][9]
-</figure>
+![Diagram showing nested elements with margins using the owl selector.][9]</figure>
 
 This is eminently less verbose and more robust than approaching the problem
 unaxiomatically and removing the leftover glue*after the fact*, as Chris Coyier
@@ -254,10 +252,9 @@ margin value, margins already adjust automatically according to another property
 When it comes to headings, there’s still more good fortune. Having set
 heading font sizes in your stylesheet in`em`s, appropriate margin (leading
 whitespace) for each heading has been set without you writing a single line of 
-additional code.
+additional code.<figure>
 
-<figure>![Diagram showing automatically adjusted margins based on font-size.][13]</
-figure>
+![Diagram showing automatically adjusted margins based on font-size.][13]</figure>
 
 ## Phrasing elements
 
@@ -270,9 +267,9 @@ I have already covered the few exceptions you may wish to employ, but, if it
 helps further, remember that phrasing elements with a typical display value of
 `inline` will inherit the top margin but be unaffected in terms of layout.
 Inline elements only respect horizontal margin, which is as specified and 
-standard behavior across all browsers.
+standard behavior across all browsers.<figure>
 
-<figure>![Diagram showing inline elements with margin.][14]</figure>
+![Diagram showing inline elements with margin.][14]</figure>
 
 If you find yourself overriding the owl selector frequently, there may be
 deeper systemic issues with the design. The owl selector deals with flow content,
@@ -280,9 +277,9 @@ and flow content should make up the majority of your content. I don’t advise
 depending heavily on positioned content in most interfaces because they break 
 implicit flow relationships. Even grid systems, with their floated columns, 
 should require no more than a simple`.row > *` selector applying 
-`margin-top: 0` to reset them.
+`margin-top: 0` to reset them.<figure>
 
-<figure>![Diagram showing floated columns with margins.][15]</figure>
+![Diagram showing floated columns with margins.][15]</figure>
 
 ## Conclusion
 

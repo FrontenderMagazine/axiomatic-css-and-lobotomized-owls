@@ -170,12 +170,10 @@ change theline-height, just change this singular margin-top value to match.
 It’s better than that, though. By applying margin between elements only, we
 don’t generate any redundant margin (exposed glue) destined to combine with the 
 padding of parent elements. Compare solution (a), which adds a top margin to all
-elements, with solution (b), which uses the owl selector.  
+elements, with solution (b), which uses the owl selector. <figure>
 
-<figure>
-   ![Diagram showing elements with margins, with and without the owl selector.][8]
-</figure>
-
+![Diagram showing elements with margins, with and without the owl selector.][8]</figure>
+  
 Now consider how this behaves in regard to nesting. As illustrated, using the
 owl selector and just a margin-top value, no first or last element of a set will
 ever present redundant margin. Whenever you create a subset of these elements, 
